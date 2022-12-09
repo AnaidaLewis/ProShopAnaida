@@ -126,3 +126,4 @@ def getOrders(request):
     orders = Order.objects.all()
     serializer = OrderSerializer(orders, many=True)
     return Response(serializer.data)
+
